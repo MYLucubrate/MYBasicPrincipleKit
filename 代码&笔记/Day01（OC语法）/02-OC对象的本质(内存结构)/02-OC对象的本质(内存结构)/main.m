@@ -52,6 +52,7 @@ int main(int argc, const char * argv[]) {
         // OC的指针桥接成C语言的指针
         struct Student_IMPL *stuImpl = (__bridge struct Student_IMPL *)stu;
         // 转成struct也能访问到成员变量，证明NSObject的本质就是struct
+        // 一般都是小端
         NSLog(@"no is %d, age is %d", stuImpl->_no, stuImpl->_age);
     }
     return 0;

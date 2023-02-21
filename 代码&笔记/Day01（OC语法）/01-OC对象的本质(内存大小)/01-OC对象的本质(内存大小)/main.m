@@ -56,6 +56,7 @@ int main(int argc, const char * argv[]) {
         // 分配给NSObject的内存大小为16个字节，真正利用的只有前8个字节（用来存放isa这个成员变量）
         
         // 苹果开放的oc源码下载：https://opensource.apple.com/tarballs/objc4/
+        // 下载数字最大的那个。
         
         // 查看malloc_size为何为16个字节：
         // 1.源码搜索：_objc_rootAllocWithZone -> class_createInstance -> _class_createInstanceFromZone
